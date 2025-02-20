@@ -1,7 +1,7 @@
 $(document).ready(function(){
   // 로딩시 -----------------------------------
   $.ajax({
-    url: '/src/data/IR.json',
+    url: '../data/IR.json',
     type: 'GET',
     dataType: 'json',
     success: function(data){
