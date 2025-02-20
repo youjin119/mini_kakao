@@ -2,18 +2,12 @@ $(document).ready(function(){
   
   // 재사용 함수 및 상수 정의 & API 호출 함수 정의
     $('.main_slider').hover(function() {
-      console.log('hover');
-      
-      // 현재 위치를
-      const computedStyle = window.getComputedStyle($('#moving_panel')[0]);
-      const scaleValue = computedStyle.transform === 'none' ? 1 : parseFloat((computedStyle.transform.split(',')[4]));
       
       $('#moving_panel, #moving_panel2').css({
         'animation-play-state': 'paused'
       });
   
     }, function() {
-      console.log('out');
       
       // 다시 animation 속성을 시작
       $('#moving_panel, #moving_panel2').css({
