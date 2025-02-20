@@ -73,7 +73,6 @@ $(document).ready(function(){
     var content03 = $('.moonoriginal').offset().top;
     var content04 = $('.sky_bg').offset().top;
 
-    console.log(scrollpos);
     // 스크롤 값이 400을 넘고, #content1이 화면에 나타나면 애니메이션을 추가
     if (scrollpos + $(window).height() > content01 + 100) {
       $('#savingimg3').addClass('animate__animated animate__slideInRight').css('opacity', '1');
@@ -111,8 +110,8 @@ window.addEventListener('scroll', () => {
 
   // h2 태그를 지날 때 색상 변경 및 별 표시
   if (scrollPosition + windowHeight > h2Position) {
-    container.style.background = '#000000'; // 배경 색상: 검은색
-    circle.style.backgroundColor = '#FFFFFF'; // 원 색상: 하얀색
+    $(container).css('background-color', '#000000');
+    $(circle).css('background-color', '#FFFFFF');
     stars.forEach(star => star.style.display = 'block'); // 별 표시
   } else {
     container.style.background = '#87CEEB'; // 배경 색상: 파랑
