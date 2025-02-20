@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: 'MyFont';
-  src: url('../src/assets/font/KoPubWorld_Dotum_Light.ttf') format('truetype');
+  src: url('../assets/font/KoPubWorld_Dotum_Light.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;}
 
@@ -27,7 +27,7 @@
 
 /* 홈 이미지 -----------------------------------------------------------*/
 .phoneImg{
-background-image: url('../src/assets/media/images/02about/home_image.png');
+background-image: url('../assets/media/images/02about/home_image.png');
 background-size: cover;
 background-position: right 48% top 45%;
 height: 500px;
@@ -165,7 +165,7 @@ margin-bottom: 80px;
   font-family: 'MyFont';
 }
 .biImg{
-  background-image: url(../src/assets/media/images/02about/img_brand_bi.png);
+  background-image: url(../assets/media/images/02about/img_brand_bi.png);
   background-size: cover;
   height: 500px;
   margin-bottom: 60px;
